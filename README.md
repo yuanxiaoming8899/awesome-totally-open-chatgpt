@@ -1,257 +1,222 @@
-<div align="center">
-    <h1>Awesome Totally Open Chatgpt</h1>
-    <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"/></a>
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
+    <div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">太棒了 完全开放 Chatgpt</font></font></h1><a id="user-content-awesome-totally-open-chatgpt" class="anchor" aria-label="永久链接：太棒了，完全开放 Chatgpt" href="#awesome-totally-open-chatgpt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+    <a href="https://github.com/sindresorhus/awesome"><img src="https://camo.githubusercontent.com/50cf39121274b3db22bf1bd72cbe25af9078e037441cb5b5bdef1cc9dc5eb2f7/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f643733303566333864323966656437386661383536353265336136336531353464643865383832392f6d656469612f62616467652e737667" data-canonical-src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" style="max-width: 100%;"></a>
 </div>
-
-ChatGPT is GPT-3.5 finetuned with RLHF (Reinforcement Learning with Human Feedback) for human instruction and chat.
-
-Alternatives are projects featuring different instruct finetuned language models for chat. 
-Projects are **not** counted if they are:
-- Alternative frontend projects which simply call OpenAI's APIs. 
-- Using language models which are not finetuned for human instruction or chat.
-
-Tags:
--   Bare: only source code, no data, no model's weight, no chat system
--   Standard: yes data, yes model's weight, bare chat via API
--   Full: full yes data, yes model's weight, fancy chat system including TUI and GUI
--   Complicated: semi open source, not really open source, based on closed model, etc...
-
-Other revelant lists:
-- [yaodongC/awesome-instruction-dataset](https://github.com/yaodongC/awesome-instruction-dataset): A collection of open-source dataset to train instruction-following LLMs (ChatGPT,LLaMA,Alpaca)
-
-# Table of Contents
-1. [The template](#The-template)
-2. [The list](#The-list)
-   - [lucidrains/PaLM-rlhf-pytorch](#lucidrainsPaLM-rlhf-pytorch)
-   - [togethercomputer/OpenChatKit](#togethercomputerOpenChatKit)
-   - [oobabooga/text-generation-webui](#oobaboogatext-generation-webui)
-   - [KoboldAI/KoboldAI-Client](#KoboldAIKoboldAI-Client)
-   - [LAION-AI/Open-Assistant](#LAION-AIOpen-Assistant)
-   - [tatsu-lab/stanford_alpaca](#tatsu-labstanford_alpaca)
-     - [Other LLaMA-derived projects](#other-llama-derived-projects)
-   - [BlinkDL/ChatRWKV](#BlinkDLChatRWKV)
-   - [THUDM/ChatGLM-6B](#THUDMChatGLM-6B)
-   - [bigscience-workshop/xmtf](#bigscience-workshopxmtf)
-   - [carperai/trlx](#carperaitrlx)
-   - [databrickslabs/dolly](#databrickslabsdolly)
-   - [LianjiaTech/BELLE](#lianjiatechbelle)
-   - [ethanyanjiali/minChatGPT](#ethanyanjialiminchatgpt)
-   - [cerebras/Cerebras-GPT](#cerebrascerebras-gpt)
-   - [TavernAI/TavernAI](#tavernaitavernai)
-   - [Cohee1207/SillyTavern](#cohee1207sillytavern)
-   - [h2oai/h2ogpt](#h2oaih2ogpt)
-   - [mlc-ai/web-llm](#mlc-aiweb-llm)
-   - [Stability-AI/StableLM](#stability-aistablelm)
-   - [clue-ai/ChatYuan](#clue-aichatyuan)
-   - [OpenLMLab/MOSS](#openlmlabmoss)
-
-# The template
-
-Append the new project at the end of file
-
-```markdown
-## [{owner}/{project-name}]{https://github.com/link/to/project}
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatGPT 是 GPT-3.5，通过 RLHF（带有人类反馈的强化学习）进行了微调，用于人类指导和聊天。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">替代方案是具有不同指令微调语言模型的项目。如果</font><font style="vertical-align: inherit;">项目符合以下条件，</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">则不</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">计算在内：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅调用 OpenAI 的 API 的替代前端项目。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用未针对人类指令或聊天进行微调的语言模型。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bare：只有源代码，没有数据，没有模型权重，没有聊天系统</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标准：是数据，是模型体重，通过 API 进行裸聊天</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完整：完整的数据、模型的重量、精美的聊天系统，包括 TUI 和 GUI</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">复杂：半开源、非真正开源、基于封闭模型等……</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他相关列表：</font></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/yaodongC/awesome-instruction-dataset"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yaodongC/awesome-instruction-dataset</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用于训练遵循指令的 LLM 的开源数据集集合（ChatGPT、LLaMA、Alpaca）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></h1><a id="user-content-table-of-contents" class="anchor" aria-label="固定链接：目录" href="#table-of-contents"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><a href="#The-template"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></a></li>
+<li><a href="#The-list"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列表</font></font></a>
+<ul dir="auto">
+<li><a href="#lucidrainsPaLM-rlhf-pytorch"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lucidrains/PaLM-rlhf-pytorch</font></font></a></li>
+<li><a href="#togethercomputerOpenChatKit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一起计算机/OpenChatKit</font></font></a></li>
+<li><a href="#oobaboogatext-generation-webui"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">oobaboga/文本生成-webui</font></font></a></li>
+<li><a href="#KoboldAIKoboldAI-Client"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KoboldAI/KoboldAI-客户端</font></font></a></li>
+<li><a href="#LAION-AIOpen-Assistant"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LAION-AI/开放助手</font></font></a></li>
+<li><a href="#tatsu-labstanford_alpaca"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tatsu 实验室/stanford_alpaca</font></font></a>
+<ul dir="auto">
+<li><a href="#other-llama-derived-projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他 LLaMA 衍生项目</font></font></a></li>
+</ul>
+</li>
+<li><a href="#BlinkDLChatRWKV"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BlinkDL/ChatRWKV</font></font></a></li>
+<li><a href="#THUDMChatGLM-6B"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">THUDM/聊天GLM-6B</font></font></a></li>
+<li><a href="#bigscience-workshopxmtf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大科学研讨会/xmtf</font></font></a></li>
+<li><a href="#carperaitrlx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">卡尔佩莱/特尔克斯</font></font></a></li>
+<li><a href="#databrickslabsdolly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">databrickslabs/多莉</font></font></a></li>
+<li><a href="#lianjiatechbelle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">链家科技/百丽</font></font></a></li>
+<li><a href="#ethanyanjialiminchatgpt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ethanyanjiaali/minChatGPT</font></font></a></li>
+<li><a href="#cerebrascerebras-gpt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大脑/Cerebras-GPT</font></font></a></li>
+<li><a href="#tavernaitavernai"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">酒馆AI/酒馆AI</font></font></a></li>
+<li><a href="#cohee1207sillytavern"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cohee1207/傻酒馆</font></font></a></li>
+<li><a href="#h2oaih2ogpt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">h2oai/h2ogpt</font></font></a></li>
+<li><a href="#mlc-aiweb-llm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MLC-ai/web-llm</font></font></a></li>
+<li><a href="#stability-aistablelm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">稳定性-AI/StableLM</font></font></a></li>
+<li><a href="#clue-aichatyuan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">线索-ai/ChatYuan</font></font></a></li>
+<li><a href="#openlmlabmoss"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenLMLab/MOSS</font></font></a></li>
+</ul>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></h1><a id="user-content-the-template" class="anchor" aria-label="永久链接： 模板" href="#the-template"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将新项目附加到文件末尾</font></font></p>
+<div class="highlight highlight-text-md notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-mh">## <span class="pl-en"><span class="pl-s">[</span>{owner}/{project-name}<span class="pl-s">]</span>{<span class="pl-corl">https://github.com/link/to/project}</span></span></span>
 
 Description goes here
 
-Tags: Bare/Standard/Full/Complicated
-```
-
-# The list
-
-## [lucidrains/PaLM-rlhf-pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch)
-
-Implementation of RLHF (Reinforcement Learning with Human Feedback) on top of the PaLM architecture. Basically ChatGPT but with PaLM
-
-Tags: Bare
-
-## [togethercomputer/OpenChatKit](https://github.com/togethercomputer/OpenChatKit)
-
-OpenChatKit provides a powerful, open-source base to create both specialized and general purpose chatbots for various applications. 
-
-Related links:
-- [spaces/togethercomputer/OpenChatKit](https://huggingface.co/spaces/togethercomputer/OpenChatKit)
-
-Tags: Full
-
-## [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui)
-
-A gradio web UI for running Large Language Models like GPT-J 6B, OPT, GALACTICA, LLaMA, and Pygmalion.
-
-Tags: Full
-
-## [KoboldAI/KoboldAI-Client](https://github.com/KoboldAI/KoboldAI-Client)
-
-This is a browser-based front-end for AI-assisted writing with multiple local & remote AI models. It offers the standard array of tools, including Memory, Author’s Note, World Info, Save & Load, adjustable AI settings, formatting options, and the ability to import existing AI Dungeon adventures. You can also turn on Adventure mode and play the game like AI Dungeon Unleashed.
-
-Tags: Full
-
-## [LAION-AI/Open-Assistant](https://github.com/LAION-AI/Open-Assistant) 
-
-OpenAssistant is a chat-based assistant that understands tasks, can interact with third-party systems, and retrieve information dynamically to do so.
-
-Related links:
-- [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant)
-- [r/OpenAssistant/](https://www.reddit.com/r/OpenAssistant/)
-
-Tags: Full
-
-## [tatsu-lab/stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca)
-
-This is the repo for the Stanford Alpaca project, which aims to build and share an instruction-following LLaMA model.
-
-Tags: Complicated
-
-### Other LLaMA-derived projects:
-
-- [pointnetwork/point-alpaca](https://github.com/pointnetwork/point-alpaca) Released weights recreated from Stanford Alpaca, an experiment in fine-tuning LLaMA on a synthetic instruction dataset.
-- [tloen/alpaca-lora](https://github.com/tloen/alpaca-lora) Code for rproducing the Stanford Alpaca results using low-rank adaptation (LoRA).
-- [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) Ports for inferencing LLaMA in C/C++ running on CPUs, supports alpaca, gpt4all, etc.
-- [setzer22/llama-rs](https://github.com/setzer22/llama-rs) Rust port of the llama.cpp project.
-- [juncongmoo/chatllama](https://github.com/juncongmoo/chatllama) Open source implementation for LLaMA-based ChatGPT runnable in a single GPU.
-- [Lightning-AI/lit-llama](https://github.com/Lightning-AI/lit-llama) Implementation of the LLaMA language model based on nanoGPT.
-- [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) Demo, data and code to train an assistant-style large language model with ~800k GPT-3.5-Turbo Generations based on LLaMA.
-- [hpcaitech/ColossalAI#ColossalChat](https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat) An open-source solution for cloning ChatGPT with a complete RLHF pipeline.
-- [lm-sys/FastChat](https://github.com/lm-sys/FastChat) An open platform for training, serving, and evaluating large language model based chatbots.
-- [nsarrazin/serge](https://github.com/nsarrazin/serge) A web interface for chatting with Alpaca through llama.cpp. Fully dockerized, with an easy to use API.
-
-## [BlinkDL/ChatRWKV](https://github.com/BlinkDL/ChatRWKV)
-
-ChatRWKV is like ChatGPT but powered by RWKV (100% RNN) language model, and open source.
-
-Tags: Full
-
-## [THUDM/ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)
-
-ChatGLM-6B is an open bilingual language model based on General Language Model (GLM) framework, with 6.2 billion parameters. With the quantization technique, users can deploy locally on consumer-grade graphics cards (only 6GB of GPU memory is required at the INT4 quantization level).
-
-Related links:
-
-- Alternative Web UI: [Akegarasu/ChatGLM-webui](https://github.com/Akegarasu/ChatGLM-webui)
-- Slim version (remove 20K image tokens to reduce memory usage): [silver/chatglm-6b-slim](https://huggingface.co/silver/chatglm-6b-slim)
-- Fintune ChatGLM-6b using low-rank adaptation (LoRA): [lich99/ChatGLM-finetune-LoRA](https://github.com/lich99/ChatGLM-finetune-LoRA)
-- Deploying ChatGLM on Modelz: [tensorchord/modelz-ChatGLM](https://github.com/tensorchord/modelz-ChatGLM)
-- Docker image with built-on playground UI and streaming API compatible with OpenAI, using [Basaran](https://github.com/hyperonym/basaran): [peakji92/chatglm:6b](https://hub.docker.com/r/peakji92/chatglm/tags)
-
-Tags: Full
-
-## [bigscience-workshop/xmtf](https://github.com/bigscience-workshop/xmtf)
-
-This repository provides an overview of all components used for the creation of BLOOMZ & mT0 and xP3 introduced in the paper [Crosslingual Generalization through Multitask Finetuning](https://arxiv.org/abs/2211.01786).
-
-Related links:
-- [bigscience/bloomz](https://huggingface.co/bigscience/bloomz)
-- [bigscience/mt0-base](https://huggingface.co/bigscience/mt0-base)
-
-Tags: Standard
-
-## [carperai/trlx](https://github.com/carperai/trlx)
-
- A repo for distributed training of language models with Reinforcement Learning via Human Feedback (RLHF), supporting online RL up to 20b params and offline RL to larger models. Basically what you would use to finetune GPT into ChatGPT. 
-
-Tags: Bare
-
-## [databrickslabs/dolly](https://github.com/databrickslabs/dolly)
-
-Databricks’ dolly-v2-12b, an instruction-following large language model trained on the Databricks machine learning platform that is licensed for commercial use. Based on pythia-12b trained on ~15k instruction/response fine tuning records [databricks-dolly-15k](https://github.com/databrickslabs/dolly/tree/master/data) generated by Databricks employees in capability domains from the InstructGPT paper.
-
-Related links:
-- [dolly v2 12B commercial commercially available model](https://huggingface.co/databricks/dolly-v2-12b)
-- [dolly v1 6b model card](https://huggingface.co/databricks/dolly-v1-6b)
-
-Tags: Standard
-
-## [LianjiaTech/BELLE](https://github.com/LianjiaTech/BELLE)
-
-The goal of this project is to promote the development of the open-source community for Chinese language large-scale conversational models. This project optimizes Chinese performance in addition to original Stanford Alpaca. The model finetuning uses only data generated via ChatGPT (without other data). This repo contains: 175 chinese seed tasks used for generating the data, code for generating the data, 0.5M generated data used for fine-tuning the model, model finetuned from BLOOMZ-7B1-mt on data generated by this project.
-
-Related links:
-- [English readme](https://github.com/LianjiaTech/BELLE#-belle-be-large-language-model-engine-1)
-
-Tags: Standard
-
-## [ethanyanjiali/minChatGPT](https://github.com/ethanyanjiali/minChatGPT)
-
-A minimum example of aligning language models with RLHF similar to ChatGPT
-
-Related links:
-- [huggingface.co/ethanyanjiali/minChatGPT](https://huggingface.co/ethanyanjiali/minChatGPT)
-
-Tags: Standard
-
-## [cerebras/Cerebras-GPT](https://huggingface.co/cerebras/Cerebras-GPT-6.7B)
-
-7 open source GPT-3 style models with parameter ranges from 111 million to 13 billion, trained using the [Chinchilla](https://arxiv.org/abs/2203.15556) formula. Model weights have been released under a permissive license (Apache 2.0 license in particular).
-
-Related links:
-- [Announcement](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
-- [Models with other amount of parameters](https://huggingface.co/cerebras)
-
-Tags: Standard
-
-## [TavernAI/TavernAI](https://github.com/TavernAI/TavernAI)
-
-Atmospheric adventure chat for AI language model **Pygmalion** by default and other models such as **KoboldAI**, ChatGPT, GPT-4
-
-Tags: Full
-
-## [Cohee1207/SillyTavern](https://github.com/Cohee1207/SillyTavern)
-
-SillyTavern is a fork of TavernAI 1.2.8 which is under more active development, and has added many major features. At this point they can be thought of as completely independent programs. On its own Tavern is useless, as it's just a user interface. You have to have access to an AI system backend that can act as the roleplay character. There are various supported backends: OpenAPI API (GPT), KoboldAI (either running locally or on Google Colab), and more.
-
-Tags: Full
-
-## [h2oai/h2ogpt](https://github.com/h2oai/h2ogpt)
-
-h2oGPT - The world's best open source GPT
-- Open-source repository with fully permissive, commercially usable code, data and models
-- Code for preparing large open-source datasets as instruction datasets for fine-tuning of large language models (LLMs), including prompt engineering
-- Code for fine-tuning large language models (currently up to 20B parameters) on commodity hardware and enterprise GPU servers (single or multi node)
-- Code to run a chatbot on a GPU server, with shareable end-point with Python client API
-- Code to evaluate and compare the performance of fine-tuned LLMs
-
-Related links:
-- [h2oGPT 20B](https://gpt.h2o.ai/)
-- [🤗 h2oGPT 12B #1](https://huggingface.co/spaces/h2oai/h2ogpt-chatbot)
-- [🤗 h2oGPT 12B #2](https://huggingface.co/spaces/h2oai/h2ogpt-chatbot2)
-
-Tags: Full
-
-## [mlc-ai/web-llm](https://github.com/mlc-ai/web-llm)
-
-Bringing large-language models and chat to web browsers. Everything runs inside the browser with no server support.
-
-Related links:
-- https://mlc.ai/web-llm
-
-Tags: Full
-
-## [Stability-AI/StableLM](https://github.com/Stability-AI/StableLM)
-
-This repository contains Stability AI's ongoing development of the StableLM series of language models and will be continuously updated with new checkpoints.
-
-Related links:
-- [huggingface.co/spaces/stabilityai/stablelm-tuned-alpha-chat](https://huggingface.co/spaces/stabilityai/stablelm-tuned-alpha-chat)
-- [StableVicuna](https://github.com/Stability-AI/StableLM#stablevicuna) an RLHF fine-tune of Vicuna-13B v0, which itself is a fine-tune of LLaMA-13B. 
-
-Tags: Full
-
-## [clue-ai/ChatYuan](https://github.com/clue-ai/ChatYuan)
-
-ChatYuan: Large Language Model for Dialogue in Chinese and English (The repos are mostly in Chinese)
-
-Related links:
-- [A bit translated readme to English](https://github.com/nichtdax/awesome-totally-open-chatgpt/issues/18#issuecomment-1492826662)
-
-Tags: Full
-
-
-## [OpenLMLab/MOSS](https://github.com/OpenLMLab/MOSS)
-
-MOSS: An open-source tool-augmented conversational language model from Fudan University. (Most examples are in Chinese)
-
-Related links:
-- [English readme](https://github.com/OpenLMLab/MOSS/blob/main/README_en.md)
-
-Tags: Full
-
+Tags: Bare/Standard/Full/Complicated</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="## [{owner}/{project-name}]{https://github.com/link/to/project}
+
+Description goes here
+
+Tags: Bare/Standard/Full/Complicated" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列表</font></font></h1><a id="user-content-the-list" class="anchor" aria-label="永久链接： 列表" href="#the-list"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/lucidrains/PaLM-rlhf-pytorch"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lucidrains/PaLM-rlhf-pytorch</font></font></a></h2><a id="user-content-lucidrainspalm-rlhf-pytorch" class="anchor" aria-label="永久链接：lucidrains/PaLM-rlhf-pytorch" href="#lucidrainspalm-rlhf-pytorch"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 PaLM 架构之上实现 RLHF（带有人类反馈的强化学习）。基本上是 ChatGPT，但使用 PaLM</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 裸露</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/togethercomputer/OpenChatKit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一起计算机/OpenChatKit</font></font></a></h2><a id="user-content-togethercomputeropenchatkit" class="anchor" aria-label="永久链接： Togethercomputer/OpenChatKit" href="#togethercomputeropenchatkit"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenChatKit 提供了强大的开源基础，可以为各种应用程序创建专用和通用聊天机器人。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://huggingface.co/spaces/togethercomputer/OpenChatKit" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">空间/togethercomputer/OpenChatKit</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/oobabooga/text-generation-webui"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">oobaboga/文本生成-webui</font></font></a></h2><a id="user-content-oobaboogatext-generation-webui" class="anchor" aria-label="永久链接：oobaboga/text- Generation-webui" href="#oobaboogatext-generation-webui"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于运行 GPT-J 6B、OPT、GALACTICA、LLaMA 和 Pygmalion 等大型语言模型的 gradio Web UI。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/KoboldAI/KoboldAI-Client"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KoboldAI/KoboldAI-客户端</font></font></a></h2><a id="user-content-koboldaikoboldai-client" class="anchor" aria-label="永久链接：KoboldAI/KoboldAI-客户端" href="#koboldaikoboldai-client"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是一个基于浏览器的前端，用于具有多个本地和远程人工智能模型的人工智能辅助写作。它提供了一系列标准工具，包括内存、作者注释、世界信息、保存和加载、可调整的 AI 设置、格式选项以及导入现有 AI Dungeon 冒险的功能。您还可以打开冒险模式并玩《AI Dungeon Unleashed》等游戏。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/LAION-AI/Open-Assistant"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LAION-AI/开放助手</font></font></a></h2><a id="user-content-laion-aiopen-assistant" class="anchor" aria-label="永久链接：LAION-AI/Open-Assistant" href="#laion-aiopen-assistant"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenAssistant 是一个基于聊天的助手，它可以理解任务，可以与第三方系统交互，并动态检索信息来执行此操作。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://huggingface.co/OpenAssistant" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Huggingface.co/OpenAssistant</font></font></a></li>
+<li><a href="https://www.reddit.com/r/OpenAssistant/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r/打开助手/</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/tatsu-lab/stanford_alpaca"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tatsu 实验室/stanford_alpaca</font></font></a></h2><a id="user-content-tatsu-labstanford_alpaca" class="anchor" aria-label="永久链接： tatsu-lab/stanford_alpaca" href="#tatsu-labstanford_alpaca"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是斯坦福羊驼项目的存储库，该项目旨在构建和共享遵循指令的 LLaMA 模型。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 复杂</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他 LLaMA 衍生项目：</font></font></h3><a id="user-content-other-llama-derived-projects" class="anchor" aria-label="永久链接：其他 LLaMA 衍生项目：" href="#other-llama-derived-projects"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/pointnetwork/point-alpaca"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pointnetwork/point-alpaca</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布了从斯坦福 Alpaca 重新创建的权重，这是一项在合成指令数据集上微调 LLaMA 的实验。</font></font></li>
+<li><a href="https://github.com/tloen/alpaca-lora"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tloen/alpaca-lora</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用低秩适应 (LoRA) 生成斯坦福羊驼结果的代码。</font></font></li>
+<li><a href="https://github.com/ggerganov/llama.cpp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ggerganov/llama.cpp</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于在 CPU 上运行的 C/C++ 中推理 LLaMA 的端口，支持 alpaca、gpt4all 等。</font></font></li>
+<li><a href="https://github.com/setzer22/llama-rs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">setzer22/llama-rs</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> llama.cpp 项目的 Rust 端口。</font></font></li>
+<li><a href="https://github.com/juncongmoo/chatllama"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juncongmoo/chatllama</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于 LLaMA 的 ChatGPT 的开源实现，可在单个 GPU 中运行。</font></font></li>
+<li><a href="https://github.com/Lightning-AI/lit-llama"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lightning-AI/lit-llama</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于nanoGPT的LLaMA语言模型的实现。</font></font></li>
+<li><a href="https://github.com/nomic-ai/gpt4all"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nomic-ai/gpt4all</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示、数据和代码，用于基于 LLaMA 训练具有约 800k GPT-3.5-Turbo 代的助手式大型语言模型。</font></font></li>
+<li><a href="https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hpcaitech/ColossalAI#ColossalChat</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一个开源解决方案，用于通过完整的 RLHF 管道克隆 ChatGPT。</font></font></li>
+<li><a href="https://github.com/lm-sys/FastChat"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lm-sys/FastChat</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一个开放平台，用于训练、服务和评估基于大型语言模型的聊天机器人。</font></font></li>
+<li><a href="https://github.com/nsarrazin/serge"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nsarrazin/serge</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 llama.cpp 与 Alpaca 聊天的 Web 界面。完全 Docker 化，具有易于使用的 API。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/BlinkDL/ChatRWKV"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BlinkDL/ChatRWKV</font></font></a></h2><a id="user-content-blinkdlchatrwkv" class="anchor" aria-label="永久链接：BlinkDL/ChatRWKV" href="#blinkdlchatrwkv"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatRWKV 类似于 ChatGPT，但由 RWKV（100% RNN）语言模型提供支持，并且是开源的。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/THUDM/ChatGLM-6B"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">THUDM/聊天GLM-6B</font></font></a></h2><a id="user-content-thudmchatglm-6b" class="anchor" aria-label="永久链接：THUDM/ChatGLM-6B" href="#thudmchatglm-6b"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatGLM-6B是一个基于通用语言模型（GLM）框架的开放双语语言模型，拥有62亿个参数。通过量化技术，用户可以在消费级显卡上本地部署（INT4量化级别仅需要6GB GPU内存）。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">替代 Web UI：</font></font><a href="https://github.com/Akegarasu/ChatGLM-webui"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Akegararasu/ChatGLM-webui</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Slim 版本（删除 20K 图像令牌以减少内存使用）：</font></font><a href="https://huggingface.co/silver/chatglm-6b-slim" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">silver/chatglm-6b-slim</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用低秩适应 (LoRA) 的 Fintune ChatGLM-6b：</font></font><a href="https://github.com/lich99/ChatGLM-finetune-LoRA"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lich99/ChatGLM-finetune-LoRA</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Modelz 上部署 ChatGLM：</font></font><a href="https://github.com/tensorchord/modelz-ChatGLM"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tensorchord/modelz-ChatGLM</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 镜像具有内置的 Playground UI 和与 OpenAI 兼容的流 API，使用</font></font><a href="https://github.com/hyperonym/basaran"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Basaran</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://hub.docker.com/r/peakji92/chatglm/tags" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">peakji92/chatglm:6b</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/bigscience-workshop/xmtf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大科学研讨会/xmtf</font></font></a></h2><a id="user-content-bigscience-workshopxmtf" class="anchor" aria-label="永久链接：bigscience-workshop/xmtf" href="#bigscience-workshopxmtf"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库概述了用于创建 BLOOMZ 和 mT0 以及 xP3 的所有组件，该组件在论文</font></font><a href="https://arxiv.org/abs/2211.01786" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crosslingual Generalization through Multitask Finetuning</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中介绍。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://huggingface.co/bigscience/bloomz" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大科学/bloomz</font></font></a></li>
+<li><a href="https://huggingface.co/bigscience/mt0-base" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大科学/mt0-base</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 标准</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/carperai/trlx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">卡尔佩莱/特尔克斯</font></font></a></h2><a id="user-content-carperaitrlx" class="anchor" aria-label="永久链接：carperai/trlx" href="#carperaitrlx"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一个用于通过人类反馈强化学习 (RLHF) 进行语言模型分布式训练的存储库，支持高达 20b 参数的在线强化学习和更大模型的离线强化学习。基本上你会用什么来将 GPT 微调到 ChatGPT 中。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 裸露</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/databrickslabs/dolly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">databrickslabs/多莉</font></font></a></h2><a id="user-content-databrickslabsdolly" class="anchor" aria-label="永久链接：databrickslabs/dolly" href="#databrickslabsdolly"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Databricks 的 dolly-v2-12b 是一种在 Databricks 机器学习平台上训练的遵循指令的大型语言模型，已获得商业用途许可。基于经过约 15k 指令/响应微调记录的 pythia-12b 训练，</font></font><a href="https://github.com/databrickslabs/dolly/tree/master/data"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">databricks-dolly-15k</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由 Databricks 员工在 InstructGPT 论文的能力域中生成。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://huggingface.co/databricks/dolly-v2-12b" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dolly v2 12B 商用 商用型号</font></font></a></li>
+<li><a href="https://huggingface.co/databricks/dolly-v1-6b" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多莉 v1 6b 模型卡</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 标准</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/LianjiaTech/BELLE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">链家科技/百丽</font></font></a></h2><a id="user-content-lianjiatechbelle" class="anchor" aria-label="永久链接：链家科技/百丽" href="#lianjiatechbelle"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目的目标是促进中文大规模会话模型开源社区的发展。这个项目除了原来的Stanford Alpaca之外，还优化了中文的性能。模型微调仅使用通过 ChatGPT 生成的数据（没有其他数据）。该仓库包含：用于生成数据的 175 个中文种子任务、用于生成数据的代码、用于微调模型的 0.5M 生成数据、根据本项目生成的数据从 BLOOMZ-7B1-mt 微调的模型。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/LianjiaTech/BELLE#-belle-be-large-language-model-engine-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">英文自述文件</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 标准</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/ethanyanjiali/minChatGPT"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ethanyanjiaali/minChatGPT</font></font></a></h2><a id="user-content-ethanyanjialiminchatgpt" class="anchor" aria-label="永久链接：ethanyanjiaali/minChatGPT" href="#ethanyanjialiminchatgpt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与 ChatGPT 类似的 RLHF 对齐语言模型的最小示例</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://huggingface.co/ethanyanjiali/minChatGPT" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Huggingface.co/ethanyanjiaali/minChatGPT</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 标准</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://huggingface.co/cerebras/Cerebras-GPT-6.7B" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大脑/Cerebras-GPT</font></font></a></h2><a id="user-content-cerebrascerebras-gpt" class="anchor" aria-label="永久链接： cerebras/Cerebras-GPT" href="#cerebrascerebras-gpt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7 个开源 GPT-3 风格模型，参数范围从 1.11 亿到 130 亿，使用</font></font><a href="https://arxiv.org/abs/2203.15556" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chinchilla</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公式进行训练。模型权重已在宽松的许可证（特别是 Apache 2.0 许可证）下发布。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公告</font></font></a></li>
+<li><a href="https://huggingface.co/cerebras" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有其他数量参数的模型</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 标准</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/TavernAI/TavernAI"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">酒馆AI/酒馆AI</font></font></a></h2><a id="user-content-tavernaitavernai" class="anchor" aria-label="永久链接：TavernAI/TavernAI" href="#tavernaitavernai"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认AI语言模型</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pygmalion和</font></font></strong><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KoboldAI</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、ChatGPT、GPT-4等其他模型的</font><font style="vertical-align: inherit;">大气冒险聊天</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/Cohee1207/SillyTavern"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cohee1207/傻酒馆</font></font></a></h2><a id="user-content-cohee1207sillytavern" class="anchor" aria-label="永久链接：Cohee1207/SillyTavern" href="#cohee1207sillytavern"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SillyTavern 是 TavernAI 1.2.8 的一个分支，TavernAI 1.2.8 正在更积极地开发中，并添加了许多主要功能。此时它们可以被认为是完全独立的程序。酒馆本身是没有用的，因为它只是一个用户界面。你必须能够访问可以充当角色扮演角色的人工智能系统后端。有各种受支持的后端：OpenAPI API (GPT)、KoboldAI（在本地运行或在 Google Colab 上运行）等等。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/h2oai/h2ogpt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">h2oai/h2ogpt</font></font></a></h2><a id="user-content-h2oaih2ogpt" class="anchor" aria-label="永久链接： h2oai/h2ogpt" href="#h2oaih2ogpt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">h2oGPT - 世界上最好的开源 GPT</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有完全许可的、商业可用的代码、数据和模型的开源存储库</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于准备大型开源数据集作为微调大型语言模型 (LLM) 的指令数据集的代码，包括即时工程</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于在商用硬件和企业 GPU 服务器（单节点或多节点）上微调大型语言模型（当前最多 20B 参数）的代码</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 GPU 服务器上运行聊天机器人的代码，具有可与 Python 客户端 API 共享的端点</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于评估和比较微调 LLM 性能的代码</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://gpt.h2o.ai/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">h2oGPT 20B</font></font></a></li>
+<li><a href="https://huggingface.co/spaces/h2oai/h2ogpt-chatbot" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤗 h2oGPT 12B #1</font></font></a></li>
+<li><a href="https://huggingface.co/spaces/h2oai/h2ogpt-chatbot2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤗 h2oGPT 12B #2</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/mlc-ai/web-llm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MLC-ai/web-llm</font></font></a></h2><a id="user-content-mlc-aiweb-llm" class="anchor" aria-label="永久链接：mlc-ai/web-llm" href="#mlc-aiweb-llm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将大型语言模型和聊天引入网络浏览器。一切都在浏览器内运行，无需服务器支持。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://mlc.ai/web-llm" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://mlc.ai/web-llm</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/Stability-AI/StableLM"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">稳定性-AI/StableLM</font></font></a></h2><a id="user-content-stability-aistablelm" class="anchor" aria-label="永久链接：稳定性-AI/StableLM" href="#stability-aistablelm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库包含 Stability AI 正在开发的 StableLM 系列语言模型，并将不断更新新的检查点。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://huggingface.co/spaces/stabilityai/stablelm-tuned-alpha-chat" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Huggingface.co/spaces/stabilityai/stablelm-tuned-alpha-chat</font></font></a></li>
+<li><a href="https://github.com/Stability-AI/StableLM#stablevicuna"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StableVicuna</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是 Vicuna-13B v0 的 RLHF 微调，它本身也是 LLaMA-13B 的微调。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/clue-ai/ChatYuan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">线索-ai/ChatYuan</font></font></a></h2><a id="user-content-clue-aichatyuan" class="anchor" aria-label="永久链接：线索-ai/ChatYuan" href="#clue-aichatyuan"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatYuan：中英文对话的大型语言模型（repos大多是中文的）</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/nichtdax/awesome-totally-open-chatgpt/issues/18#issuecomment-1492826662" data-hovercard-type="issue" data-hovercard-url="/nichtdax/awesome-totally-open-chatgpt/issues/18/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将自述文件翻译成英文</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://github.com/OpenLMLab/MOSS"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenLMLab/MOSS</font></font></a></h2><a id="user-content-openlmlabmoss" class="anchor" aria-label="永久链接：OpenLMLab/MOSS" href="#openlmlabmoss"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MOSS：复旦大学开源工具增强会话语言模型。 （大部分例子都是中文）</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/OpenLMLab/MOSS/blob/main/README_en.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">英文自述文件</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签： 完整</font></font></p>
+</article></div>
